@@ -61,7 +61,7 @@ Module BetterCalculator
                 Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}")
                 validOption = True
             Else
-                Console.WriteLine($"You entered {userInput}. Please enter a valid number.")
+                Console.WriteLine($"You entered {userInput}.")
             End If
 
         Loop Until validOption = True
