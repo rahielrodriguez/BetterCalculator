@@ -1,4 +1,5 @@
-﻿Imports System.Linq.Expressions
+﻿Option Explicit On
+Option Strict On
 
 Module BetterCalculator
 
