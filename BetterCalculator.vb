@@ -1,6 +1,5 @@
 ﻿Option Explicit On
 Option Strict On
-
 Module BetterCalculator
 
     Sub Main()
@@ -39,7 +38,9 @@ Module BetterCalculator
         Do
             Console.WriteLine("Please, choose an option:" & vbNewLine _
             & "1. Add" & vbNewLine _
-            & "2. Multiply" & vbNewLine _
+            & "2. Subtract" & vbNewLine _
+            & "3. Multiply" & vbNewLine _
+            & "4. Divide" & vbNewLine _
             & "Q to Quit" & vbNewLine
             )
             userInput = Console.ReadLine()
@@ -51,7 +52,13 @@ Module BetterCalculator
                 Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}")
                 validOption = True
             ElseIf userInput = "2" Then
+                Console.WriteLine($"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}")
+                validOption = True
+            ElseIf userInput = "3" Then
                 Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}")
+                validOption = True
+            ElseIf userInput = "4" Then
+                Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}")
                 validOption = True
             Else
                 Console.WriteLine($"You entered {userInput}. Please enter a valid number.")
